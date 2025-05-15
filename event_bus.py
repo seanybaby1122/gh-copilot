@@ -1,105 +1,90 @@
-symbolic_engine/
-│
-├── main.py
-├── event_bus.py
-├── reflex_evolution_controller.py
-├── reflex_signature_map.py
-├── reflex_adjuster.py
-├── reflex_scorer.py
-├── reflex_mutator.py
-└── predicted_event.py
-from event_bus import EventBus
-from reflex_evolution_controller import ReflexEvolutionController
-from reflex_signature_map import ReflexSignatureMap
-from reflex_adjuster import ReflexAdjuster
-from reflex_scorer import ReflexScorer
-from reflex_mutator import ReflexMutator
-from predicted_event import PredictedEvent
+# prompt: You’ve built a modular and clean reflex evolution engine using event-driven architecture. The components communicate via the EventBus, and reflexes evolve based on a score threshold. Here’s a rundown of what happens when you run python main.py along with suggestions to tighten things up.
+# ⸻
+# What Happens When You Run It
+# 1. Component Initialization
+# event_bus = EventBus()
+# adjuster = ReflexAdjuster()
+# scorer = ReflexScorer()
+# mutator = ReflexMutator()
+# controller = ReflexEvolutionController(...)
+# signature_map = ReflexSignatureMap(event_bus)
+# 	•	ReflexSignatureMap subscribes to "reflex_evolved" events via the event_bus.
+# 2. Predicted Events Setup
+# predicted_events = [
+#     PredictedEvent(...),  # Each has a score and metadata
+# ]
+# 3. Trigger Evolution
+# controller.evolve_if_needed(predicted_events)
+# 	•	For each event with a score > 0.6:
+# 	•	adjuster.adjust() is called
+# 	•	mutator.mutate() appends "_mutated" to the reflex ID
+# 	•	An event is published to "reflex_evolved" with the mutated reflex ID and new signature
+# 4. Signature Map Update
+# signature_map.handle_evolution(...)  # Automatically invoked via event_bus
+# 	•	Adds new signature mapping and logs the evolution.
+# 5. Final Output
+# print(signature_map.signature_map)
+# print(signature_map.evolution_log)
+# Expected Output:
+# [Scorer] Scoring reflex: reflex1
+# [Scorer] Scoring reflex: reflex2
+# [Controller] Evolving reflex reflex2
+# [Adjuster] Adjusting reflex: reflex2 in context def
+# [Mutator] Mutating reflex: reflex2
+# [SignatureMap] Updated signature for reflex2_mutated
+# [Scorer] Scoring reflex: reflex3
+# [Controller] Evolving reflex reflex3
+# [Adjuster] Adjusting reflex: reflex3 in context ghi
+# [Mutator] Mutating reflex: reflex3
+# [SignatureMap] Updated signature for reflex3_mutated
+# Signature map: {
+#   'reflex2_mutated': 'sig_reflex2_mutated',
+#   'reflex3_mutated': 'sig_reflex3_mutated'
+# }
+# Evolution log: [
+#   "Evolved reflex reflex2_mutated to signature 'sig_reflex2_mutated'",
+#   "Evolved reflex reflex3_mutated to signature 'sig_reflex3_mutated'"
+# ]
 
-if __name__ == "__main__":
-    # Create components
-    event_bus = EventBus()
-    adjuster = ReflexAdjuster()
-    scorer = ReflexScorer()
-    mutator = ReflexMutator()
+import networkx as nx
+import matplotlib.pyplot as plt
+from matplotlib_venn import venn2
 
-    # Create controller and signature map
-    controller = ReflexEvolutionController(adjuster, scorer, mutator, event_bus)
-    signature_map = ReflexSignatureMap(event_bus)
-
-    # Simulate predicted events
-    predicted_events = [
-        PredictedEvent(context_key="abc", strategy_name="strategy1", score=0.5, transformed_unit="unit1", reflex_id="reflex1"),
-        PredictedEvent(context_key="def", strategy_name="strategy2", score=0.7, transformed_unit="unit2", reflex_id="reflex2"),
-        PredictedEvent(context_key="ghi", strategy_name="strategy3", score=0.9, transformed_unit="unit3", reflex_id="reflex3"),
+# Sample data (replace with your actual data)
+data = {
+    "words": {
+        "apple": {"category": "Fruit", "color": "Red"},
+        "banana": {"category": "Fruit", "color": "Yellow"},
+        "orange": {"category": "Fruit", "color": "Orange"},
+        "grape": {"category": "Fruit", "color": "Purple"}
+    },
+    "transformations": [
+        {"from": "apple", "to": "ApplePie", "type": "Baking"},
+        {"from": "banana", "to": "BananaBread", "type": "Baking"},
+        {"from": "orange", "to": "OrangeJuice", "type": "Juicing"},
+        {"from": "grape", "to": "grapefruit", "type": "Mutation"}
     ]
+}
 
-    # Trigger evolution
-    controller.evolve_if_needed(predicted_events)
+# Create the directed graph
+graph = nx.DiGraph()
 
-    # Observe results
-    print("\nSignature map:", signature_map.signature_map)
-    print("Evolution log:", signature_map.evolution_log)
-  class EventBus:
-    def __init__(self):
-        self.subscribers = {}
+# Add known word nodes
+for word, metadata in data["words"].items():
+    graph.add_node(word, **metadata)
 
-    def subscribe(self, event_type, callback):
-        if event_type not in self.subscribers:
-            self.subscribers[event_type] = []
-        self.subscribers[event_type].append(callback)
+# Add missing destination words as 'Generated' nodes and add transformation edges
+for transformation in data["transformations"]:
+    from_word = transformation["from"]
+    to_word = transformation["to"]
+    if to_word not in graph:
+        graph.add_node(to_word, category="Generated", numeric=[ord(c) for c in to_word])
+    graph.add_edge(from_word, to_word, transformation=transformation["type"])
 
-    def publish(self, event_type, data):
-        if event_type in self.subscribers:
-            for callback in self.subscribers[event_type]:
-                callback(data)
-              class ReflexEvolutionController:
-    def __init__(self, adjuster, scorer, mutator, event_bus):
-        self.adjuster = adjuster
-        self.scorer = scorer
-        self.mutator = mutator
-        self.event_bus = event_bus
+# Analyze and visualize the graph (Venn diagram)
+known_words = set(data["words"].keys())
+generated_words = set(node for node, attr in graph.nodes(data=True) if attr.get("category") == "Generated")
 
-    def evolve_if_needed(self, predicted_events):
-        for event in predicted_events:
-            score = self.scorer.score(event)
-            if score > 0.6:
-                print(f"[Controller] Evolving reflex {event.reflex_id}")
-                self.adjuster.adjust(event)
-                mutated_id = self.mutator.mutate(event)
-                self.event_bus.publish("reflex_evolved", {
-                    "reflex_id": mutated_id,
-                    "signature": f"sig_{mutated_id}"
-                })class ReflexSignatureMap:
-    def __init__(self, event_bus):
-        self.signature_map = {}
-        self.evolution_log = []
-        event_bus.subscribe("reflex_evolved", self.handle_evolution)
-
-    def handle_evolution(self, data):
-        reflex_id = data["reflex_id"]
-        signature = data.get("signature", "default_signature")
-        self.signature_map[reflex_id] = signature
-        self.evolution_log.append(f"Evolved reflex {reflex_id} to signature '{signature}'")
-        print(f"[SignatureMap] Updated signature for {reflex_id}")
-      class ReflexAdjuster:
-    def adjust(self, event):
-        print(f"[Adjuster] Adjusting reflex: {event.reflex_id} in context {event.context_key}")
-      class ReflexScorer:
-    def score(self, event):
-        print(f"[Scorer] Scoring reflex: {event.reflex_id}")
-        return event.score
-      class ReflexMutator:
-    def mutate(self, event):
-        print(f"[Mutator] Mutating reflex: {event.reflex_id}")
-        return event.reflex_id + "_mutated"
-      from dataclasses import dataclass
-
-@dataclass
-class PredictedEvent:
-    context_key: str
-    strategy_name: str
-    score: float
-    transformed_unit: str
-    reflex_id: str
-python main.py
+venn2([known_words, generated_words], ('Known Words', 'Generated Words'))
+plt.title("Known vs. Generated Words")
+plt.show()
