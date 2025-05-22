@@ -1,17 +1,53 @@
-blank_issues_enabled: true
-contact_links:
-  - name: Ask a question on how to use GitHub Copilot in the CLI
-    url: https://github.com/github/gh-copilot/discussions
-    about: For general-purpose questions and answers, see the Discussions section.
+# prompt: blank_issues_enabled: true
+# contact_links:
+#   - name: Ask a question on how to use GitHub Copilot in the CLI
+#     url: https://github.com/github/gh-copilot/discussions
+#     about: For general-purpose questions and answers, see the Discussions section.
+#   - name: Ask a question about GitHub Copilot
+#     url: https://github.com/orgs/community/discussions/categories/copilot
+#     about: Please check out the GitHub community forum for discussions about GitHub Copilot.
+#   - name: GitHub Docs > GitHub Copilot in the CLI
+#     url: https://docs.github.com/en/copilot/github-copilot-in-the-cli
+#     about: For more information on use cases, enabling, and limitations
+#   - name: Contact GitHub Support
+#     url: https://support.github.com/request
+#     about: Contact Support
 
-  - name: Ask a question about GitHub Copilot
-    url: https://github.com/orgs/community/discussions/categories/copilot
-    about: Please check out the GitHub community forum for discussions about GitHub Copilot.
+# This Python code represents the provided YAML structure as a Python dictionary.
+# It's not directly executable in the context of creating a slider,
+# but shows how to represent the data in Python.
 
-  - name: GitHub Docs > GitHub Copilot in the CLI
-    url: https://docs.github.com/en/copilot/github-copilot-in-the-cli
-    about: For more information on use cases, enabling, and limitations
 
-  - name: Contact GitHub Support
-    url: https://support.github.com/request
-    about: Contact Support 
+contact_info = {
+    "blank_issues_enabled": True,
+    "contact_links": [
+        {
+            "name": "Ask a question on how to use GitHub Copilot in the CLI",
+            "url": "https://github.com/github/gh-copilot/discussions",
+            "about": "For general-purpose questions and answers, see the Discussions section."
+        },
+        {
+            "name": "Ask a question about GitHub Copilot",
+            "url": "https://github.com/orgs/community/discussions/categories/copilot",
+            "about": "Please check out the GitHub community forum for discussions about GitHub Copilot."
+        },
+        {
+            "name": "GitHub Docs > GitHub Copilot in the CLI",
+            "url": "https://docs.github.com/en/copilot/github-copilot-in-the-cli",
+            "about": "For more information on use cases, enabling, and limitations"
+        },
+        {
+            "name": "Contact GitHub Support",
+            "url": "https://support.github.com/request",
+            "about": "Contact Support"
+        }
+    ]
+}
+
+
+# Example of accessing the data
+# print(contact_info["blank_issues_enabled"])
+
+# for link in contact_info["contact_links"]:
+#     print(link["name"], link["url"])
+
