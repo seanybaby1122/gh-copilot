@@ -1,27 +1,56 @@
-# prompt: class ReflexSignatureMap:
-#     def __init__(self, event_bus):
-#         ...
-#         event_bus.subscribe("reflex_degraded", self.handle_degradation)
-#     def handle_degradation(self, data):
-#         reflex_id = data["reflex_id"]
-#         reason = data["reason"]
-#         self.signature_map.pop(reflex_id, None)
-#         self.evolution_log.append(f"Degraded reflex {reflex_id}: {reason}")
-#         logger.info(f"Removed signature for {reflex_id} due to: {reason}")
+# prompt: # symbolic_system_test.py
+# # --- Global State Initialization ---
+# loop_tracker = []
+# reflex_net = {}
+# state_flags = {}
+# buffer = []
+# stabilization_score = 0
+# topological_symmetry = 0
+# resonant_frequency = 0
+# state_cohesion = 0
+# # --- Reset Function ---
+# def reset_state():
+#     global loop_tracker, reflex_net, state_flags, buffer
+#     global stabilization_score, topological_symmetry
+#     global resonant_frequency, state_cohesion
+#     loop_tracker = []
+#     reflex_net = {}
+#     state_flags = {}
+#     buffer = []
+#     stabilization_score = 0
+#     topological_symmetry = 0
+#     resonant_frequency = 0
+#     state_cohesion = 0
+# # --- Core Logic Stubs ---
+# def parse_word(word):
+#     vowels = "aeiou"
+#     consonants = "bcdfghjklmnpqrstvwxyz"
+#     operation_char = word[0].lower()
+#     operand_chars = word[1:].lower()
+#     operation_map = {
+#         'b': {'primitive': 'Emit', 'type': 'Fundamental Symbolic Operation'},
+#         'd': {'primitive': 'Push', 'type': 'Fundamental Symbolic Operation'},
+#         'l': {'primitive': 'Pull', 'type': 'Fundamental Symbolic Operation'},
+#         's': {'primitive': 'SetFlag', 'type': 'Fundamental Symbolic Operation'},
+#         'c': {'primitive': 'ClearFlag', 'type': 'Fundamental Symbolic Operation'},
+#         'k': {'primitive': 'LinkReflex', 'type': 'Fundamental Symbolic Operation'},
+#         'u': {'primitive': 'UnlinkReflex', 'type': 'Fundamental Symbolic Operation'},
+#         # Add more as needed
+#     }
+#     operation = operation_map.get(operation_char, {'primitive': 'Unknown', 'type': 'Error'})
+#     operands = [consonants.find(char) + 1 for char in operand_chars if char in consonants]
+#     return operation, operands
+# def execute_command(command, operands):
+#     global buffer, loop_tracker, state_flags, reflex_net, stabilization_score
+#     primitive = command['primitive']
+#     if primitive == 'Emit':
+#         buffer.extend(operands)
+#         stabilization_score += len(operands) * 10
+#     elif primitive == 'Push':
+#         loop_tracker.append(operands)
+#     elif primitive == 'Pull' an
 
-import logging
-
-logger = logging.getLogger(__name__)
-
-class ReflexSignatureMap:
-    def __init__(self, event_bus):
-        self.signature_map = {}  # Initialize signature_map
-        self.evolution_log = []  # Initialize evolution_log
-        event_bus.subscribe("reflex_degraded", self.handle_degradation)
-
-    def handle_degradation(self, data):
-        reflex_id = data["reflex_id"]
-        reason = data["reason"]
-        self.signature_map.pop(reflex_id, None)
-        self.evolution_log.append(f"Degraded reflex {reflex_id}: {reason}")
-        logger.info(f"Removed signature for {reflex_id} due to: {reason}")
+# This code is intended to be run in a standard Python environment or a Colab code cell.
+# It's an interactive loop, so it will keep asking for input until you type 'quit'.
+# You can paste the entire code block into a Colab cell and run it.
+# The output will be printed directly in the output area of the cell.
