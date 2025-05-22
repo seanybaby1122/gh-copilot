@@ -1,4 +1,14 @@
-# prompt: Thanks for stitching that all together—what you’re working on is a really clean combination of dev environment hygiene and data structure visualization. Here’s a synthesis of both sides:
+--2025-05-22 14:00:20--  https://raw.githubusercontent.com/plotly/datasets/master/iris-data.csv
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4757 (4.6K) [text/plain]
+Saving to: ‘iris-data.csv’
+
+iris-data.csv       100%[===================>]   4.65K  --.-KB/s    in 0s      
+
+2025-05-22 14:00:20 (39.0 MB/s) - ‘iris-data.csv’ saved [4757/4757]
+
 # ⸻
 # 1. .editorconfig Summary (Solid Foundations + Perks)
 # You’ve locked in:
