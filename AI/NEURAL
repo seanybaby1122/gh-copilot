@@ -1,154 +1,615 @@
-sepal length,sepal width,petal length,petal width,class
-5.1,3.5,1.4,0.2,Iris-setosa
-4.9,3.0,1.4,0.2,Iris-setosa
-4.7,3.2,1.3,0.2,Iris-setosa
-4.6,3.1,1.5,0.2,Iris-setosa
-5.0,3.6,1.4,0.2,Iris-setosa
-5.4,3.9,1.7,0.4,Iris-setosa
-4.6,3.4,1.4,0.3,Iris-setosa
-5.0,3.4,1.5,0.2,Iris-setosa
-4.4,2.9,1.4,0.2,Iris-setosa
-4.9,3.1,1.5,0.1,Iris-setosa
-5.4,3.7,1.5,0.2,Iris-setosa
-4.8,3.4,1.6,0.2,Iris-setosa
-4.8,3.0,1.4,0.1,Iris-setosa
-4.3,3.0,1.1,0.1,Iris-setosa
-5.8,4.0,1.2,0.2,Iris-setosa
-5.7,4.4,1.5,0.4,Iris-setosa
-5.4,3.9,1.3,0.4,Iris-setosa
-5.1,3.5,1.4,0.3,Iris-setosa
-5.7,3.8,1.7,0.3,Iris-setosa
-5.1,3.8,1.5,0.3,Iris-setosa
-5.4,3.4,1.7,0.2,Iris-setosa
-5.1,3.7,1.5,0.4,Iris-setosa
-4.6,3.6,1.0,0.2,Iris-setosa
-5.1,3.3,1.7,0.5,Iris-setosa
-4.8,3.4,1.9,0.2,Iris-setosa
-5.0,3.0,1.6,0.2,Iris-setosa
-5.0,3.4,1.6,0.4,Iris-setosa
-5.2,3.5,1.5,0.2,Iris-setosa
-5.2,3.4,1.4,0.2,Iris-setosa
-4.7,3.2,1.6,0.2,Iris-setosa
-4.8,3.1,1.6,0.2,Iris-setosa
-5.4,3.4,1.5,0.4,Iris-setosa
-5.2,4.1,1.5,0.1,Iris-setosa
-5.5,4.2,1.4,0.2,Iris-setosa
-4.9,3.1,1.5,0.1,Iris-setosa
-5.0,3.2,1.2,0.2,Iris-setosa
-5.5,3.5,1.3,0.2,Iris-setosa
-4.9,3.1,1.5,0.1,Iris-setosa
-4.4,3.0,1.3,0.2,Iris-setosa
-5.1,3.4,1.5,0.2,Iris-setosa
-5.0,3.5,1.3,0.3,Iris-setosa
-4.5,2.3,1.3,0.3,Iris-setosa
-4.4,3.2,1.3,0.2,Iris-setosa
-5.0,3.5,1.6,0.6,Iris-setosa
-5.1,3.8,1.9,0.4,Iris-setosa
-4.8,3.0,1.4,0.3,Iris-setosa
-5.1,3.8,1.6,0.2,Iris-setosa
-4.6,3.2,1.4,0.2,Iris-setosa
-5.3,3.7,1.5,0.2,Iris-setosa
-5.0,3.3,1.4,0.2,Iris-setosa
-7.0,3.2,4.7,1.4,Iris-versicolor
-6.4,3.2,4.5,1.5,Iris-versicolor
-6.9,3.1,4.9,1.5,Iris-versicolor
-5.5,2.3,4.0,1.3,Iris-versicolor
-6.5,2.8,4.6,1.5,Iris-versicolor
-5.7,2.8,4.5,1.3,Iris-versicolor
-6.3,3.3,4.7,1.6,Iris-versicolor
-4.9,2.4,3.3,1.0,Iris-versicolor
-6.6,2.9,4.6,1.3,Iris-versicolor
-5.2,2.7,3.9,1.4,Iris-versicolor
-5.0,2.0,3.5,1.0,Iris-versicolor
-5.9,3.0,4.2,1.5,Iris-versicolor
-6.0,2.2,4.0,1.0,Iris-versicolor
-6.1,2.9,4.7,1.4,Iris-versicolor
-5.6,2.9,3.6,1.3,Iris-versicolor
-6.7,3.1,4.4,1.4,Iris-versicolor
-5.6,3.0,4.5,1.5,Iris-versicolor
-5.8,2.7,4.1,1.0,Iris-versicolor
-6.2,2.2,4.5,1.5,Iris-versicolor
-5.6,2.5,3.9,1.1,Iris-versicolor
-5.9,3.2,4.8,1.8,Iris-versicolor
-6.1,2.8,4.0,1.3,Iris-versicolor
-6.3,2.5,4.9,1.5,Iris-versicolor
-6.1,2.8,4.7,1.2,Iris-versicolor
-6.4,2.9,4.3,1.3,Iris-versicolor
-6.6,3.0,4.4,1.4,Iris-versicolor
-6.8,2.8,4.8,1.4,Iris-versicolor
-6.7,3.0,5.0,1.7,Iris-versicolor
-6.0,2.9,4.5,1.5,Iris-versicolor
-5.7,2.6,3.5,1.0,Iris-versicolor
-5.5,2.4,3.8,1.1,Iris-versicolor
-5.5,2.4,3.7,1.0,Iris-versicolor
-5.8,2.7,3.9,1.2,Iris-versicolor
-6.0,2.7,5.1,1.6,Iris-versicolor
-5.4,3.0,4.5,1.5,Iris-versicolor
-6.0,3.4,4.5,1.6,Iris-versicolor
-6.7,3.1,4.7,1.5,Iris-versicolor
-6.3,2.3,4.4,1.3,Iris-versicolor
-5.6,3.0,4.1,1.3,Iris-versicolor
-5.5,2.5,4.0,1.3,Iris-versicolor
-5.5,2.6,4.4,1.2,Iris-versicolor
-6.1,3.0,4.6,1.4,Iris-versicolor
-5.8,2.6,4.0,1.2,Iris-versicolor
-5.0,2.3,3.3,1.0,Iris-versicolor
-5.6,2.7,4.2,1.3,Iris-versicolor
-5.7,3.0,4.2,1.2,Iris-versicolor
-5.7,2.9,4.2,1.3,Iris-versicolor
-6.2,2.9,4.3,1.3,Iris-versicolor
-5.1,2.5,3.0,1.1,Iris-versicolor
-5.7,2.8,4.1,1.3,Iris-versicolor
-6.3,3.3,6.0,2.5,Iris-virginica
-5.8,2.7,5.1,1.9,Iris-virginica
-7.1,3.0,5.9,2.1,Iris-virginica
-6.3,2.9,5.6,1.8,Iris-virginica
-6.5,3.0,5.8,2.2,Iris-virginica
-7.6,3.0,6.6,2.1,Iris-virginica
-4.9,2.5,4.5,1.7,Iris-virginica
-7.3,2.9,6.3,1.8,Iris-virginica
-6.7,2.5,5.8,1.8,Iris-virginica
-7.2,3.6,6.1,2.5,Iris-virginica
-6.5,3.2,5.1,2.0,Iris-virginica
-6.4,2.7,5.3,1.9,Iris-virginica
-6.8,3.0,5.5,2.1,Iris-virginica
-5.7,2.5,5.0,2.0,Iris-virginica
-5.8,2.8,5.1,2.4,Iris-virginica
-6.4,3.2,5.3,2.3,Iris-virginica
-6.5,3.0,5.5,1.8,Iris-virginica
-7.7,3.8,6.7,2.2,Iris-virginica
-7.7,2.6,6.9,2.3,Iris-virginica
-6.0,2.2,5.0,1.5,Iris-virginica
-6.9,3.2,5.7,2.3,Iris-virginica
-5.6,2.8,4.9,2.0,Iris-virginica
-7.7,2.8,6.7,2.0,Iris-virginica
-6.3,2.7,4.9,1.8,Iris-virginica
-6.7,3.3,5.7,2.1,Iris-virginica
-7.2,3.2,6.0,1.8,Iris-virginica
-6.2,2.8,4.8,1.8,Iris-virginica
-6.1,3.0,4.9,1.8,Iris-virginica
-6.4,2.8,5.6,2.1,Iris-virginica
-7.2,3.0,5.8,1.6,Iris-virginica
-7.4,2.8,6.1,1.9,Iris-virginica
-7.9,3.8,6.4,2.0,Iris-virginica
-6.4,2.8,5.6,2.2,Iris-virginica
-6.3,2.8,5.1,1.5,Iris-virginica
-6.1,2.6,5.6,1.4,Iris-virginica
-7.7,3.0,6.1,2.3,Iris-virginica
-6.3,3.4,5.6,2.4,Iris-virginica
-6.4,3.1,5.5,1.8,Iris-virginica
-6.0,3.0,4.8,1.8,Iris-virginica
-6.9,3.1,5.4,2.1,Iris-virginica
-6.7,3.1,5.6,2.4,Iris-virginica
-6.9,3.1,5.1,2.3,Iris-virginica
-5.8,2.7,5.1,1.9,Iris-virginica
-6.8,3.2,5.9,2.3,Iris-virginica
-6.7,3.3,5.7,2.5,Iris-virginica
-6.7,3.0,5.2,2.3,Iris-virginica
-6.3,2.5,5.0,1.9,Iris-virginica
-6.5,3.0,5.2,2.0,Iris-virginica
-6.2,3.4,5.4,2.3,Iris-virginica
-5.9,3.0,5.1,1.8,Iris-virginica
+# Install necessary libraries
+# Use !pip install with the -q flag for quieter output in notebooks
+!pip install -q dash dash-core-components dash-html-components dash-cytoscape plotly networkx jupyter-dash
+
+# Explicitly upgrade dash and jupyter-dash to potentially fix version conflicts
+!pip install -q --upgrade dash jupyter-dash
+
+# Ensure the kernel restarts after package installation/upgrade if needed.
+# In some environments (like local Jupyter), you might need to manually restart the kernel.
+# In Colab, subsequent cells should pick up the new versions.
+# If you are running locally, you might need to manually restart your Jupyter kernel
+# after executing the pip install commands for the changes to take effect.
+
+
+# Rest of your code follows below...
+
+import networkx as nx
+from typing import Dict, Any, List, Tuple
+import dash
+# Check Dash version after import to confirm upgrade
+print(f"Dash version: {dash.__version__}")
+
+import dash_core_components as dcc
+import dash_html_components as html
+import dash_cytoscape as cyto
+from dash.dependencies import Input, Output, State
+import plotly.graph_objects as go
+import json # Required for storing complex graph data
+import sys
+import ast # Import ast for safer parsing of literals
+
+# The traceback suggests the error is in jupyter_dash's interaction with its parent class.
+# The correct way to use jupyter_dash in Colab is with modes ('inline' or 'external').
+# The user's code correctly implements this conditional logic.
+# The error likely stems from an environment-specific issue (like Carnets)
+# or a library version conflict that causes the 'super()' call inside jupyter_dash
+# to fail. We cannot fix the library's internal code from here.
+# The fix is to provide the user's code *as intended* for a Jupyter/Colab environment,
+# assuming the library versions are compatible after installation/upgrade.
+try:
+    from jupyter_dash import JupyterDash
+    JUPYTERDASH_AVAILABLE = True
+except ImportError:
+    JUPYTERDASH_AVAILABLE = False
+
+# --- Define Classes ---
+class SymbolicSymbol:
+    def __init__(self, name: str, value: Any, symbol_type: str):
+        self.name = name
+        self.value = value
+        self.symbol_type = symbol_type
+    def __repr__(self):
+        return f"SymbolicSymbol(name='{self.name}', value={self.value}, type='{self.symbol_type}')"
+    def to_dict(self):
+        # Convert potentially complex values to string for display
+        value_str = str(self.value) # Simple string conversion for display
+        return {
+            'id': self.name, # Use 'id' for Cytoscape compatibility
+            'label': f"{self.name} ({self.symbol_type})", # Provide a default label
+            'name': self.name, # Keep original name
+            'value': value_str,
+            'symbol_type': self.symbol_type
+        }
+
+class SymbolicRelation:
+    def __init__(self, source: str, target: str, relation_type: str):
+        self.source = source # name of the source symbol
+        self.target = target # name of the target symbol
+        self.relation_type = relation_type
+    def __repr__(self):
+        return f"SymbolicRelation(source='{self.source}', target='{self.target}', type='{self.relation_type}')"
+    def to_dict(self):
+        return {
+            'source': self.source,
+            'target': self.target,
+            'relation_type': self.relation_type,
+            'label': self.relation_type # Use relation_type as edge label
+        }
+
+class GraphVisualization:
+    def __init__(self):
+        self.G = nx.DiGraph()
+        self.elements = []
+
+    def add_symbol(self, symbol: SymbolicSymbol):
+        # Only add if node doesn't already exist
+        if symbol.name not in self.G.nodes:
+            self.G.add_node(symbol.name, type=symbol.symbol_type, value=symbol.value)
+            self._update_elements()
+        else:
+            print(f"Warning: Symbol '{symbol.name}' already exists. Not added.", file=sys.stderr)
+
+
+    def add_relation(self, relation: SymbolicRelation):
+        # Ensure source and target nodes exist before adding edge
+        if relation.source not in self.G.nodes:
+             print(f"Warning: Source node '{relation.source}' not found. Relation not added.", file=sys.stderr)
+             return
+        if relation.target not in self.G.nodes:
+             print(f"Warning: Target node '{relation.target}' not found. Relation not added.", file=sys.stderr)
+             return
+        # Only add if edge doesn't already exist
+        if not self.G.has_edge(relation.source, relation.target):
+            self.G.add_edge(relation.source, relation.target, type=relation.relation_type)
+            self._update_elements()
+        else:
+             print(f"Warning: Relation '{relation.source}' -> '{relation.target}' already exists. Not added.", file=sys.stderr)
+
+
+    def remove_element(self, element_identifier: Any):
+        """Removes a node by name or an edge by (source, target) tuple."""
+        if isinstance(element_identifier, str): # Assuming it's a node name
+            if element_identifier in self.G.nodes:
+                self.G.remove_node(element_identifier)
+                self._update_elements()
+                print(f"Removed node: {element_identifier}", file=sys.stderr)
+            else:
+                print(f"Warning: Node '{element_identifier}' not found. Cannot remove.", file=sys.stderr)
+        elif isinstance(element_identifier, tuple) and len(element_identifier) == 2: # Assuming it's an edge tuple (u, v)
+             u, v = element_identifier
+             if self.G.has_edge(u, v):
+                 self.G.remove_edge(*edge_tuple)
+                 self._update_elements()
+                 print(f"Removed edge: ({u}, {v})", file=sys.stderr)
+             else:
+                 print(f"Warning: Edge ({u}, {v}) not found. Cannot remove.", file=sys.stderr)
+        else:
+            print(f"Warning: Invalid element identifier for removal: {element_identifier}. Provide node name (string) or edge tuple (source, target).", file=sys.stderr)
+
+
+    def _update_elements(self):
+        """Converts the NetworkX graph to Cytoscape elements format."""
+        self.elements = []
+        # Add nodes
+        for node, data in self.G.nodes(data=True):
+            self.elements.append({
+                'data': {
+                    'id': node,
+                    'label': f"{node} ({data.get('type', 'unknown')})",
+                    'type': data.get('type', 'unknown'),
+                    'value': str(data.get('value', '')) # Convert value to string
+                }
+            })
+        # Add edges
+        for source, target, data in self.G.edges(data=True):
+            self.elements.append({
+                'data': {
+                    'source': source,
+                    'target': target,
+                    'label': data.get('type', 'related to'),
+                    'type': data.get('type', 'related to')
+                }
+            })
+    def get_elements(self) -> List[Dict[str, Any]]:
+        return self.elements
+
+    def to_json(self) -> str:
+        """Exports the graph data to a JSON string."""
+        nodes_data = [{'name': node, **data} for node, data in self.G.nodes(data=True)]
+        edges_data = [{'source': u, 'target': v, **data} for u, v, data in self.G.edges(data=True)]
+        return json.dumps({'nodes': nodes_data, 'edges': edges_data})
+
+    @classmethod
+    def from_json(cls, json_string: str) -> 'GraphVisualization':
+        """Imports graph data from a JSON string."""
+        data = json.loads(json_string)
+        graph_viz = cls()
+        # Add nodes
+        for node_data in data.get('nodes', []):
+            name = node_data.pop('name')
+            graph_viz.G.add_node(name, **node_data)
+        # Add edges
+        for edge_data in data.get('edges', []):
+            source = edge_data.pop('source')
+            target = edge_data.pop('target')
+            graph_viz.G.add_edge(source, target, **edge_data)
+        graph_viz._update_elements() # Rebuild cytoscape elements
+        return graph_viz
+
+# --- Instantiate Graph Visualization ---
+graph_viz = GraphVisualization()
+
+# --- Add Sample Data (Optional, for testing) ---
+# symbol_a = SymbolicSymbol("A", 10, "Number")
+# symbol_b = SymbolicSymbol("B", "text", "String")
+# symbol_c = SymbolicSymbol("C", [1, 2], "List")
+# relation_ab = SymbolicRelation("A", "B", "connected_to")
+# relation_ac = SymbolicRelation("A", "C", "influences")
+# graph_viz.add_symbol(symbol_a)
+# graph_viz.add_symbol(symbol_b)
+# graph_viz.add_symbol(symbol_c)
+# graph_viz.add_relation(relation_ab)
+# graph_viz.add_relation(relation_ac)
+
+
+# --- Dash App Setup ---
+# Use JupyterDash if available, otherwise use standard Dash
+if JUPYTERDASH_AVAILABLE:
+    app = JupyterDash(__name__)
+    # Choose the appropriate mode for Colab (inline or external)
+    # 'inline' attempts to render within the cell output.
+    # 'external' provides a clickable link to a separate tab.
+    # 'external' is often more reliable in Colab for complex apps.
+    # For simple testing, 'inline' might work.
+    # We'll default to external as it's generally more robust for interactivity.
+    RUN_MODE = 'external' # Or 'inline'
+else:
+    app = dash.Dash(__name__)
+    RUN_MODE = None # Standard Dash doesn't use a mode argument for run_server
+
+# Potential Enhancement 2: Enable SymbolicSymbol creation from CSV (like Iris)
+# Add a new input for CSV data and a button to process it.
+# Modify the update_graph callback to handle this new trigger.
+# Implement the helper function `parse_iris_row`.
+
+def parse_iris_row(row: str, index: int) -> List[Any]: # Return List[Any] as it can be Symbols or Relations
+    """Parses a single row of Iris-like CSV data into a list of SymbolicSymbols and Relations."""
+    row = row.strip()
+    if not row or row.startswith('#'): # Skip empty lines or comments
+        return []
+
+    features = row.split(',')
+    if len(features) != 5: # Assuming 4 features + 1 class
+        print(f"Warning: Skipping malformed row (expected 5 columns): {row}", file=sys.stderr)
+        return []
+
+    elements: List[Any] = [] # Can contain Symbols or Relations
+    # Define keys and expected types
+    keys_and_types = [
+        ("sepal_length", "Number"),
+        ("sepal_width", "Number"),
+        ("petal_length", "Number"),
+        ("petal_width", "Number"),
+        ("class", "Category") # Using "Category" as a specific string type
+    ]
+
+    # Create a unique identifier for the instance, e.g., "iris_instance_1"
+    instance_name = f"iris_instance_{index}"
+    elements.append(SymbolicSymbol(instance_name, f"Row {index}", "Instance")) # Represent the row itself as a node
+
+    for i, (key, symbol_type) in enumerate(keys_and_types):
+        value_str = features[i].strip()
+        symbol_name = f"{instance_name}_{key}" # Give symbols a unique name based on instance and key
+        try:
+            # Attempt to convert to the expected type if it's a number
+            if symbol_type == "Number":
+                value = float(value_str)
+            else: # Keep as string for other types
+                value = value_str
+            elements.append(SymbolicSymbol(symbol_name, value, symbol_type))
+
+            # Add a relation from the instance node to each symbol node
+            # This creates a structure where "iris_instance_1" is connected to "iris_instance_1_sepal_length", etc.
+            elements.append(SymbolicRelation(instance_name, symbol_name, key)) # Use the key as the relation type
+
+        except ValueError:
+            print(f"Warning: Could not convert value '{value_str}' for key '{key}' to type '{symbol_type}'. Storing as string.", file=sys.stderr)
+            elements.append(SymbolicSymbol(symbol_name, value_str, symbol_type))
+            elements.append(SymbolicRelation(instance_name, symbol_name, key)) # Still add relation even if value conversion fails
+
+    return elements
+
+
+# Add a simulation section to the layout
+app.layout = html.Div([
+    html.H1("Symbolic Knowledge Graph Visualization"),
+    html.Div([
+        html.Div([
+            html.H3("Add Symbol"),
+            dcc.Input(id='new-symbol-name', type='text', placeholder='Symbol Name', value=''),
+            dcc.Input(id='new-symbol-value', type='text', placeholder='Symbol Value (string)', value=''),
+            dcc.Input(id='new-symbol-type', type='text', placeholder='Symbol Type', value=''),
+            html.Button('Add Symbol', id='add-symbol-button', n_clicks=0)
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'}),
+        html.Div([
+            html.H3("Add Relation"),
+            dcc.Dropdown(id='relation-source-dropdown', placeholder='Source Symbol'),
+            dcc.Dropdown(id='relation-target-dropdown', placeholder='Target Symbol'),
+            dcc.Input(id='new-relation-type', type='text', placeholder='Relation Type', value=''),
+            html.Button('Add Relation', id='add-relation-button', n_clicks=0)
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'}),
+         html.Div([
+            html.H3("Remove Element"),
+            dcc.Dropdown(id='remove-element-dropdown', placeholder='Select Element to Remove'),
+            html.Button('Remove Selected Element', id='remove-element-button', n_clicks=0)
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'}),
+        html.Div([
+             html.H3("Graph Data (JSON)"),
+             dcc.Textarea(id='graph-data-output', style={'width': '100%', 'height': 150, 'fontFamily': 'monospace'}),
+             html.Button('Load Graph from JSON', id='load-graph-button', n_clicks=0)
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'}),
+        html.Div([
+             html.H3("Import Symbols from CSV (Iris-like format)"),
+             dcc.Textarea(id='csv-import-input', style={'width': '100%', 'height': 100, 'fontFamily': 'monospace'},
+                          placeholder='Paste CSV data here (e.g., 5.1,3.5,1.4,0.2,Iris-setosa\n4.9,3.0,1.4,0.2,Iris-setosa)'),
+             html.Button('Import CSV Data', id='import-csv-button', n_clicks=0)
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'}),
+        # New section for simulation/introspection
+        html.Div([
+            html.H3("Symbol Introspection / Simulation"),
+            dcc.Dropdown(id='simulation-source-dropdown', placeholder='Simulation Start Symbol'),
+            dcc.Dropdown(id='simulation-target-dropdown', placeholder='Simulation End Symbol (Optional)'),
+            dcc.Input(id='simulation-rule-input', type='text', placeholder='Simulation Rule (e.g., path)', value='path'), # Placeholder for rule input
+            html.Button('Run Simulation', id='run-simulation-button', n_clicks=0),
+            html.Div(id='simulation-output', style={'margin-top': '10px', 'fontFamily': 'monospace'})
+        ], style={'padding': '10px', 'border': '1px solid #ccc', 'margin-bottom': '10px'})
+    ]),
+    html.Div([
+        html.H3("Current Relations"),
+        html.Div(id='current-relations-output', style={'height': 200, 'overflowY': 'scroll', 'border': '1px solid #ccc', 'padding': '10px'})
+    ], style={'padding': '10px', 'margin-bottom': '10px'}),
+    cyto.Cytoscape(
+        id='cytoscape-graph',
+        layout={'name': 'cose'}, # layout: 'grid', 'circle', 'cose', 'random', 'preset'
+        style={'width': '100%', 'height': '600px'},
+        elements=graph_viz.get_elements(),
+        stylesheet=[
+            {
+                'selector': 'node',
+                'style': {
+                    'label': 'data(label)',
+                    'background-color': '#ADD8E6', # Light Blue
+                    'text-valign': 'center',
+                    'text-halign': 'center',
+                    'shape': 'ellipse',
+                    'width': 'mapData(size, 0, 100, 20, 60)',
+                    'height': 'mapData(size, 0, 100, 20, 60)',
+                    'font-size': '10px',
+                    'text-wrap': 'wrap',
+                    'text-max-width': '80px'
+                }
+            },
+            {
+                'selector': 'edge',
+                'style': {
+                    'label': 'data(label)',
+                    'curve-style': 'bezier',
+                    'target-arrow-shape': 'triangle',
+                    'line-color': '#ccc',
+                    'target-arrow-color': '#ccc',
+                    'font-size': '8px',
+                    'text-rotation': 'autorotate',
+                    'text-margin-y': '-10px' # Adjust text position
+                }
+            },
+            {
+                'selector': '[type = "Number"]',
+                'style': {
+                    'background-color': '#90EE90' # Light Green
+                }
+            },
+             {
+                'selector': '[type = "String"]',
+                'style': {
+                    'background-color': '#FFB6C1' # Light Pink
+                }
+            },
+             {
+                'selector': '[type = "List"]',
+                'style': {
+                    'background-color': '#FFD700' # Gold
+                }
+            },
+            {
+                'selector': '[type = "Category"]', # Style for the new Category type
+                'style': {
+                    'background-color': '#BA55D3' # Medium Orchid
+                }
+            },
+            {
+                'selector': '[type = "Instance"]', # Style for the new Instance type
+                'style': {
+                    'background-color': '#F08080' # Light Coral
+                }
+            },
+            {
+                'selector': '.selected',
+                'style': {
+                    'line-color': '#FF4136',
+                    'target-arrow-color': '#FF4136',
+                    'border-width': 2,
+                    'border-color': '#FF4136',
+                    'border-opacity': 1
+                }
+            },
+            {
+                 'selector': '.simulation-highlight', # New selector for simulation results
+                 'style': {
+                     'line-color': '#0074D9', # Blue
+                     'target-arrow-color': '#0074D9',
+                     'border-color': '#0074D9',
+                     'border-width': 3
+                 }
+            }
+        ]
+    ),
+    html.Div(id='cytoscape-tap-node-data'),
+    html.Div(id='cytoscape-tap-edge-data'),
+    # Hidden div to store graph data as JSON string
+    html.Div(id='graph-data-store', style={'display': 'none'}, children=graph_viz.to_json())
+])
+
+# Add a new callback for the simulation button
+@app.callback(
+    Output('simulation-output', 'children'),
+    Output('cytoscape-graph', 'stylesheet', allow_duplicate=True), # Update stylesheet to highlight
+    Input('run-simulation-button', 'n_clicks'),
+    State('simulation-source-dropdown', 'value'),
+    State('simulation-target-dropdown', 'value'),
+    State('simulation-rule-input', 'value'),
+    State('graph-data-store', 'children'),
+    State('cytoscape-graph', 'stylesheet'), # Get current stylesheet
+    prevent_initial_call=True
+)
+def run_simulation(run_clicks, start_node, end_node, simulation_rule, current_graph_data_json, current_stylesheet):
+    if run_clicks is None or run_clicks == 0:
+        return "", current_stylesheet # Do nothing on initial load
+
+    if not current_graph_data_json:
+        return "Error: Graph is empty. Add symbols and relations first.", current_stylesheet
+
+    current_graph_viz = GraphVisualization.from_json(current_graph_data_json)
+    G = current_graph_viz.G # Get the networkx graph
+
+    simulation_result = ""
+    highlight_elements = [] # List to store element IDs or selectors to highlight
+
+    # Start with a fresh copy of the base stylesheet (without previous simulation highlights)
+    base_stylesheet = [style.copy() for style in current_stylesheet if 'selector' not in style or not style['selector'].startswith('.simulation-highlight')]
+
+    if simulation_rule.lower() == 'path' and start_node:
+        simulation_result += f"Finding path from {start_node}"
+        if end_node:
+            simulation_result += f" to {end_node}:<br>"
+            if G.has_node(start_node) and G.has_node(end_node):
+                try:
+                    # Find the shortest path
+                    path = list(nx.shortest_path(G, source=start_node, target=end_node)) # Ensure path is a list
+                    simulation_result += " -> ".join(path)
+                    # Highlight nodes in the path
+                    highlight_elements.extend(path)
+                    # Highlight edges in the path
+                    for i in range(len(path) - 1):
+                        u, v = path[i], path[i+1]
+                        # Add selector for the edge
+                        highlight_elements.append({'selector': f'edge[source = "{u}"][target = "{v}"]', 'class': 'simulation-highlight'})
+
+                except nx.NetworkXNoPath:
+                    simulation_result += "No path found."
+                except nx.NodeNotFound as e:
+                     simulation_result += f"Error: Node not found: {e}"
+            else:
+                simulation_result += "Error: Start or end node not in the graph."
+        else:
+            # Example: find all reachable nodes and their connections from start_node
+            simulation_result += f" (all reachable nodes and edges from {start_node}):<br>"
+            if G.has_node(start_node):
+                 reachable_nodes = set(nx.descendants(G, start_node)) # Use set for efficiency
+                 reachable_nodes.add(start_node)
+                 simulation_result += ", ".join(sorted(list(reachable_nodes))) # Display sorted nodes
+                 highlight_elements.extend(list(reachable_nodes)) # Add node IDs to highlight
+
+                 # Highlight edges within the reachable subgraph starting from the source
+                 subgraph = G.subgraph(reachable_nodes)
+                 for u, v in subgraph.edges():
+                      highlight_elements.append({'selector': f'edge[source = "{u}"][target = "{v}"]', 'class': 'simulation-highlight'})
+
+            else:
+                simulation_result += "Error: Start node not in the graph."
+    elif simulation_rule:
+         simulation_result = f"Unknown simulation rule: '{simulation_rule}'"
+    else:
+         simulation_result = "Please select a start node and/or define a simulation rule."
+
+    # Append new highlight styles to the base stylesheet
+    updated_stylesheet = base_stylesheet
+
+    # Add the simulation-highlight class definition if it's somehow missing
+    highlight_style_exists = any(style.get('selector') == '.simulation-highlight' for style in updated_stylesheet)
+    if not highlight_style_exists:
+         updated_stylesheet.append({
+                 'selector': '.simulation-highlight',
+                 'style': {
+                     'line-color': '#0074D9', # Blue
+                     'target-arrow-color': '#0074D9',
+                     'border-color': '#0074D9',
+                     'border-width': 3
+                 }
+            })
+
+    # Apply the highlight class to the specific elements found in the simulation
+    for element_spec in highlight_elements:
+         if isinstance(element_spec, str): # It's a node ID
+              updated_stylesheet.append({
+                  'selector': f'node[id = "{element_spec}"]',
+                  'class': 'simulation-highlight'
+              })
+         elif isinstance(element_spec, dict) and 'selector' in element_spec and 'class' in element_spec: # It's an edge selector with class
+              updated_stylesheet.append(element_spec) # Add the edge selector and class directly
+
+
+    return html.Div(dcc.Markdown(simulation_result)), updated_stylesheet # Use Markdown for line breaks
+
+# Update the dropdowns for the simulation inputs as well in the main callback
+@app.callback(
+    Output('relation-source-dropdown', 'options'),
+    Output('relation-target-dropdown', 'options'),
+    Output('remove-element-dropdown', 'options'),
+    Output('simulation-source-dropdown', 'options'), # Add simulation dropdown output
+    Output('simulation-target-dropdown', 'options'), # Add simulation dropdown output
+    Output('cytoscape-graph', 'elements'),
+    Output('graph-data-store', 'children'),
+    Output('graph-data-output', 'value'),
+    Output('current-relations-output', 'children'),
+    Input('add-symbol-button', 'n_clicks'),
+    Input('add-relation-button', 'n_clicks'),
+    Input('remove-element-button', 'n_clicks'),
+    Input('load-graph-button', 'n_clicks'),
+    Input('import-csv-button', 'n_clicks'),
+    State('new-symbol-name', 'value'),
+    State('new-symbol-value', 'value'),
+    State('new-symbol-type', 'value'),
+    State('relation-source-dropdown', 'value'),
+    State('relation-target-dropdown', 'value'),
+    State('new-relation-type', 'value'),
+    State('remove-element-dropdown', 'value'),
+    State('graph-data-store', 'children'),
+    State('graph-data-output', 'value'),
+    State('csv-import-input', 'value'),
+    prevent_initial_call=False
+)
+def update_all_dropdowns_and_graph(
+    add_symbol_clicks, add_relation_clicks, remove_element_clicks, load_graph_clicks, import_csv_clicks,
+    new_symbol_name, new_symbol_value, new_symbol_type,
+    relation_source_name, relation_target_name, new_relation_type,
+    element_to_remove, current_graph_data_json, graph_data_textarea, csv_data_input
+):
+    ctx = dash.callback_context
+    trigger_id = ctx.triggered[0]['prop_id'].split('.')[0] if ctx.triggered else 'initial-load'
+
+    if trigger_id != 'initial-load' or current_graph_data_json:
+         current_graph_viz = GraphVisualization.from_json(current_graph_data_json)
+    else:
+         current_graph_viz = GraphVisualization()
+
+    if trigger_id == 'add-symbol-button' and add_symbol_clicks > 0:
+        if new_symbol_name:
+            try:
+                 # Safely evaluate literal values like numbers, strings, lists, dicts, booleans, None
+                 evaluated_value = ast.literal_eval(new_symbol_value) if new_symbol_value else None
+            except (ValueError, SyntaxError) as e:
+                 print(f"Warning: Could not evaluate symbol value '{new_symbol_value}'. Storing as string. Error: {e}", file=sys.stderr)
+                 evaluated_value = new_symbol_value # Fallback to string if eval fails
+            new_symbol = SymbolicSymbol(new_symbol_name, evaluated_value, new_symbol_type if new_symbol_type else 'unknown')
+            current_graph_viz.add_symbol(new_symbol)
+
+    elif trigger_id == 'add-relation-button' and add_relation_clicks > 0:
+        if relation_source_name and relation_target_name:
+            new_relation = SymbolicRelation(relation_source_name, relation_target_name, new_relation_type if new_relation_type else 'related to')
+            current_graph_viz.add_relation(new_relation)
+
+    elif trigger_id == 'remove-element-button' and remove_element_clicks > 0:
+        if element_to_remove:
+            try:
+                 # Attempt to parse element_to_remove string as a tuple for edge removal
+                 if element_to_remove.startswith('(') and element_to_remove.endswith(')'):
+                     try:
+                         # Use literal_eval to safely parse the tuple string representation
+                         element_tuple = ast.literal_eval(element_to_remove)
+                         if isinstance(element_tuple, tuple) and len(element_tuple) == 2:
+                              current_graph_viz.remove_element(element_tuple) # Pass the tuple to remove_element
+                         else:
+                              print(f"Error: Invalid edge format string: {element_to_remove}", file=sys.stderr)
+                     except (ValueError, SyntaxError) as e:
+                          print(f"Error parsing edge string '{element_to_remove}': {e}", file=sys.stderr)
+                 else:
+                     # Assume it's a node name (string)
+                     current_graph_viz.remove_element(element_to_remove)
+
+            except Exception as e:
+                 print(f"Error removing element '{element_to_remove}': {e}", file=sys.stderr)
+
+
+    elif trigger_id == 'load-graph-button' and load_graph_clicks > 0:
+        if graph_data_textarea:
+            try:
+                 current_graph_viz = GraphVisualization.from_json(graph_data_textarea)
+                 print("Graph loaded from JSON textarea.", file=sys.stderr)
+            except Exception as e:
+                 print(f"Error loading graph from JSON: {e}", file=sys.stderr)
+                 # Keep the old graph state if loading fails
+                 pass # current_graph_viz remains the one loaded from graph_data_store
+
+
+    # === FIX STARTS HERE ===
+    elif trigger_id == 'import-csv-button' and import_csv_clicks > 0:
+        # This block was causing the IndentationError
+        if csv_data_input:
+            lines = csv_data_input.strip().split('\n')
+            for i, line in enumerate(lines):
+                parsed_elements = parse_iris_row(line, i + 1)
+                for element in parsed_elements:
+                    if isinstance(element, SymbolicSymbol):
+                        current_graph_viz.add_symbol(element)
+                    elif isinstance(element, SymbolicRelation):
+                         # Check if source and target symbols exist before adding relation
+                         # This check is crucial if symbols from one row might not be in the graph yet
+                         # if relations are processed before all symbols are added from a batch.
+                         if element.source in current_graph_viz.G.nodes and element.target in current_graph_viz.G.nodes:
+                              current_graph_viz.add_relation(element)
+                         else:
+                              print(f"Warning: Skipping relation from CSV because source '{element.source}' or target '{element.target}' not found: {element}", file=sys.stderr)
 sepal length,sepal width,petal length,petal width,class
 5.1,3.5,1.4,0.2,Iris-setosa
 4.9,3.0,1.4,0.2,Iris-setosa
