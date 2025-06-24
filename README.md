@@ -10,9 +10,81 @@ iris-data.csv       100%[===================>]   4.65K  --.-KB/s    in 0s
 2025-05-22 14:00:20 (39.0 MB/s) - ‘iris-data.csv’ saved [4757/4757]
 
 # ⸻
-# 1. .editorconfig Summary (Solid Foundations + Perks)
+# prompt: 1. .editorconfig Summary (Solid Foundations + Perks)
 # You’ve locked in:
-# 	•	root = true (no cascading ambiguity)
+# • root = true (no cascading and ambiguity)
+
+# While .editorconfig helps define consistent code styles,
+# it's not directly executable Python code.
+# To "lock in" these settings, you'd typically save them
+# in a file named `.editorconfig` in your project's root directory.
+# The specific tooling you use (like your editor or linters)
+# then reads this file to apply the rules.
+
+# This cell can be used to demonstrate creating such a file
+# in your Colab environment if needed for a specific task,
+# but it doesn't "execute" the editorconfig rules themselves.
+
+# Example: Create a dummy .editorconfig file
+editorconfig_content = """
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.py]
+indent_size = 2
+
+[*.js]
+indent_size = 2
+"""
+
+with open(".editorconfig", "w") as f:
+    f.write(editorconfig_content)
+
+print(".editorconfig file created with root = true and basic Python/JS settings.")
+print("This file will be used by compatible editors and tools.")
+
+# While .editorconfig helps define consistent code styles,
+# it's not directly executable Python code.
+# To "lock in" these settings, you'd typically save them
+# in a file named `.editorconfig` in your project's root directory.
+# The specific tooling you use (like your editor or linters)
+# then reads this file to apply the rules.
+
+# This cell can be used to demonstrate creating such a file
+# in your Colab environment if needed for a specific task,
+# but it doesn't "execute" the editorconfig rules themselves.
+
+# Example: Create a dummy .editorconfig file
+editorconfig_content = """
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.py]
+indent_size = 2
+
+[*.js]
+indent_size = 2
+"""
+
+with open(".editorconfig", "w") as f:
+    f.write(editorconfig_content)
+
+print(".editorconfig file created with root = true and basic Python/JS settings.")
+print("This file will be used by compatible editors and tools.")
 # 	•	UTF-8 + LF + newline enforcement
 # 	•	Scoped formatting for web-focused files
 # You’ve enhanced with:
